@@ -102,8 +102,8 @@ const Header = (props) => {
                                 Dashboard
                             </span>
 
-                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/product-statistics")}>
-                                Statistics
+                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/daily-request-booking")}>
+                               Daily Request Booking
                             </span>
 
                             <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/banner")}>
@@ -118,8 +118,8 @@ const Header = (props) => {
                                Vendor
                             </span>
 
-                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/daily-request-booking")}>
-                               Daily Booking
+                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/create-discount")}>
+                              Create Discount
                             </span>
 
                             

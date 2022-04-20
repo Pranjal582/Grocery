@@ -8,7 +8,7 @@ const Coupon = () => {
   return (
     <>
     <ContainerS>
-        <Header cname={"Coupons-List"} needaddbtn={true} btn={"Create Coupon"}/>
+        <Header cname={"Coupons-List"} needaddbtn={true} btn={"Create Coupon"} pathname='/vendor/create-coupon'/>
         <CouponList/>
 
     </ContainerS>

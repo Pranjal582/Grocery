@@ -10,9 +10,11 @@ const img = "https://images.picxy.com/cache/2020/11/18/aeef82200f0f9e7b023b39067
 // const img = "https://i.pinimg.com/564x/8c/03/c6/8c03c6c53fe3cc22116896ec9c43ffb2.jpg"
 
 const Header = (props) => {
+
+    
+
     const navigate = useNavigate();
-
-
+    
     /*local state */
     const [Sidebar, setSidebar] = useState(false);
 
@@ -30,8 +32,7 @@ const Header = (props) => {
     return (
         <div className="topheader">
             <AppBar position="fixed" className="MainHeader">
-                <Toolbar className="header_padding">
-                        
+                <Toolbar className="header_padding">          
                     <div className="d-flex">
                     <span className='pr-3'><img src={img} alt="" height="50" width='50'
                      style={{borderRadius:"999px", objectFit: "cover", cursor: "pointer" }} 
@@ -44,7 +45,6 @@ const Header = (props) => {
                             }}>
                             </i></span>
                     </div>
-
                     <div className="header_grow" />
                     <div className="header_links">
                         <span className="d-flex " >
@@ -83,7 +83,6 @@ const Header = (props) => {
                         >
                             <i className="fa fa-bars"></i>
                         </span>
-
                         <div id="mySidenav" className="sidenav">
                             <div className="cross_icon_style">
                                 <i
@@ -98,41 +97,43 @@ const Header = (props) => {
                             <div className="text-center">
                                 {/* <img src={sikhlo} alt="" /> */}
                             </div>
-                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/admin")}>
+                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/vendor/vendor-home")}>
                                 Dashboard
                             </span>
 
-                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/product-statistics")}>
-                                Statistics
+                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/vendor/product-details")}>
+                               Product Details
                             </span>
 
-                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/banner")}>
-                               Banner
+                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/vendor/order-list")}>
+                               Vendor Order
                             </span>
 
-                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/delivery-partner")}>
-                               Delivery Partner
+                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/vendor/commission")}>
+                              Commission
                             </span>
 
-                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/vendor")}>
-                               Vendor
+                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/vendor/users")}>
+                               Users
                             </span>
 
-                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/daily-request-booking")}>
-                               Daily Booking
+                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/vendor/category")}>
+                               Category
                             </span>
 
-                            
-
-
-                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("#")}>
-                                Change Password
+                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/vendor/coupons")}>
+                               Coupon
+                            </span>
+                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/vendor/timing")}>
+                               Timing
+                            </span>
+                            <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/vendor/support")}>
+                              Support
                             </span>
 
                             <span className="logout_Pointer_cursor mt-2" onClick={() => navigate("/")}>
                                 Log Out
                             </span>
-
                         </div>
                     </div>
                 </Toolbar>

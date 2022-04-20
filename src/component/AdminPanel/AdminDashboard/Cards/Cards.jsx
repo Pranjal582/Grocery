@@ -74,7 +74,7 @@ const Cards = () => {
     <Container>
         <MainContent>
             <SmallCards  onClick={() => navigate("#")}>
-                <span>1909</span>
+                <span>199</span>
                 <h6>Total Vendor</h6>
 
                 <ShoppingBasketOutlinedIcon style={{position :'absolute', right: '10px', bottom : '10px', fontSize : '100px', color : '#ceebee', zIndex: '1', opacity: '0.8'}}/>
@@ -82,7 +82,7 @@ const Cards = () => {
             </SmallCards>
             <SmallCards style={{backgroundColor : '#99f8a5'}} onClick={() => navigate("/categories")}>
                 <span>59</span>
-                <h6>Total category</h6>
+                <h6>Total Product</h6>
 
                 <ShoppingBasketOutlinedIcon style={{position :'absolute', right: '10px', bottom : '10px', fontSize : '100px', color : '#ceebee', zIndex: '1', opacity: '0.8'}}/>
 
@@ -96,7 +96,7 @@ const Cards = () => {
             </SmallCards>
             <SmallCards onClick={() => navigate("/users")}>
                 <span>19</span>
-                <h6>New Vendor</h6>
+                <h6>Notifications</h6>
 
                 <ShoppingBasketOutlinedIcon style={{position :'absolute', right: '10px', bottom : '10px', fontSize : '100px', color : '#ceebee', zIndex: '1', opacity: '0.8'}}/>
 

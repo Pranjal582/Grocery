@@ -1,11 +1,11 @@
 
 import { Table } from 'react-bootstrap'
-import { useNavigate } from 'react-router'
+// import { useNavigate } from 'react-router'
 
 
 const PurchasList = () => {
 
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
   const data = [
     {
@@ -60,14 +60,12 @@ const PurchasList = () => {
           {data.map((data=>(
 
           <tr key={data.id} >
-      
             <td>
               <img src={data.img} alt="" style={{width:"50px" , height:"50px", borderRadius:"999px", objectFit:"contain"}}/>
                </td>
             <td>{data.name} </td>
    
-            <td>{data.email} </td>
-           
+            <td>{data.email} </td>    
             <td>
               {/* <button 
                 onClick={()=>navigate('/vendor/users-details',{state:data})}

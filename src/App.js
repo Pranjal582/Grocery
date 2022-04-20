@@ -52,6 +52,10 @@ import SalesProfile from './component/Salers/SalesProfile/SalesProfile';
 import ForgotPassword from './component/Salers/ForgetPassword/ForgotPassword';
 import OPTpage from './component/Salers/ForgetPassword/OTPpage';
 import EnterPassword from './component/Salers/ForgetPassword/NewPassword';
+import PaymentGateway from './component/VendorPanel/PaymentGateWay/PaymentGateway';
+import TransactionList from './component/VendorPanel/PaymentGateWay/TransactionList';
+import EditCoupon from './component/VendorPanel/Coupons/EditCoupon';
+import CreateCoupon from './component/VendorPanel/Coupons/CreateCoupon';
 
 
 const App = () => {
@@ -105,6 +109,7 @@ const App = () => {
           <Route path="/vendor/timing" element={< Timeing />} />
           <Route path="/vendor/support" element={< Support />} />
           <Route path="/vendor-profile-update" element={< VendorProfileSettings />} />
+          <Route path="/vendor/payment-gateway" element={< PaymentGateway />} />
 
 
           {/* pages?\ */}
@@ -114,6 +119,9 @@ const App = () => {
            <Route path="/vendor/Details-report" element={<ReportHme />} />
            <Route path="/vendor/product-alert" element={<ProductQuntityAlert />} />
            <Route path="/vendor/return" element={<Returns />} />
+           <Route path="/vendor/payment-gateway-details" element={<TransactionList />} />
+           <Route path="/vendor/create-coupon" element={<CreateCoupon />} />
+           <Route path="/vendor/edit-coupon" element={<EditCoupon />} />
 
            {/* //<-----------------sales panel -----------------> */}
 

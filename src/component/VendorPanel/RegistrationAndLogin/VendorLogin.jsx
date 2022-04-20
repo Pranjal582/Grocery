@@ -41,9 +41,9 @@ const VendorLogin = (props) => {
 
     const [open, setOpen] = React.useState(false);
 
-    const handleClick = () => {
-      setOpen(true);
-    };
+    // const handleClick = () => {
+    //   setOpen(true);
+    // };
   
     const handleClose = (event, reason) => {
       if (reason === 'clickaway') {

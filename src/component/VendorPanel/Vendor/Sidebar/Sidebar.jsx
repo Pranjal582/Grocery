@@ -15,6 +15,10 @@ import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 import LocalAtmIcon from '@mui/icons-material/LocalAtm';
 import CategoryIcon from '@mui/icons-material/Category';
 import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
+import PercentIcon from '@mui/icons-material/Percent';
+import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
+import PaymentsOutlinedIcon from '@mui/icons-material/PaymentsOutlined';
+import InventoryOutlinedIcon from '@mui/icons-material/InventoryOutlined';
 
 import AppSettingsAltIcon from '@mui/icons-material/AppSettingsAlt'; //setting
 
@@ -33,11 +37,12 @@ const Sidebar = (props) => {
                     <MenuItem title="Commission" icon={<LocalAtmIcon icon={faFile} />} onClick={() => navigate("/vendor/commission")}> Commission </MenuItem>
                     <MenuItem title="Category" icon={<CategoryIcon icon={faFile} />} onClick={() => navigate("/vendor/category")}> Category </MenuItem>
                     <MenuItem title="Users" icon={<PeopleOutlineIcon icon={faFile} />} onClick={() => navigate("/vendor/users")}> Salers List </MenuItem>
-                    <MenuItem title="Coupon" icon={<PeopleOutlineIcon icon={faFile} />} onClick={() => navigate("/vendor/coupons")}> Coupons </MenuItem>
-                    <MenuItem title="Timing" icon={<PeopleOutlineIcon icon={faFile} />} onClick={() => navigate("/vendor/timing")}> Timeing </MenuItem>
+                    <MenuItem title="Coupon" icon={<PercentIcon icon={faFile} />} onClick={() => navigate("/vendor/coupons")}> Coupons </MenuItem>
+                    <MenuItem title="Timing" icon={<AccessTimeOutlinedIcon icon={faFile} />} onClick={() => navigate("/vendor/timing")}> Timeing </MenuItem>
                     <MenuItem title="Support" icon={<PeopleOutlineIcon icon={faFile} />} onClick={() => navigate("/vendor/support")}> Support </MenuItem>
+                    <MenuItem title="PaymentGateway" icon={<PaymentsOutlinedIcon icon={faFile} />} onClick={() => navigate("/vendor/payment-gateway")}> Payment Gateway </MenuItem>
 
-                    <SubMenu title="Inventory Management" icon={<AppSettingsAltIcon icon={faFile} />}>
+                    <SubMenu title="Inventory Management" icon={<InventoryOutlinedIcon icon={faFile} />}>
                             <MenuItem onClick={() => navigate("/vendor/sales-report")}> Sales Report</MenuItem>
                             <MenuItem onClick={() => navigate("/vendor/instoke-purchase")}> Purchases/Stock-in </MenuItem>                      
                             {/* <MenuItem onClick={() => navigate("#")}> Monthly/week/Days Wise Reports </MenuItem>                       */}

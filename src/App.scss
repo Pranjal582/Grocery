@@ -9,6 +9,29 @@ p {
   color: red;
 } */
 
+
+.pageNumber{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  // cursor: pointer;
+
+  li{
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  
+
+    :active{
+      background-color: #010202;
+      color: #fff;
+    }
+  }
+
+
+
+}
+
 .vendor{
   display: flex;
   justify-content: space-between;
@@ -215,4 +238,19 @@ responsive to mobile view on various screen width as below */
     flex-wrap: initial;
     box-sizing: border-box;
   }
+}
+
+.TableBtn{
+   margin: 0 9px;
+   border: none;
+   cursor: pointer;
+   padding: 4px 5px;
+   border-radius: 4px;
+   color: #fff;
+   background-color: #21b53f;
+
+   &:nth-child(2){
+     
+     background-color: #ff0000;
+   }
 }

@@ -140,7 +140,7 @@ const CouponList = () => {
           <td>{item.validTill} </td>
           <td>
             {/* <button onClick={handleClickOpen} style={{border: 'none', cursor : 'pointer',backgroundColor: '#10b0ef', color:'#fff' }}>View</button> */}
-            <button onClick={()=>navigate('/edit-coupons', {state:item})} style={{margin : '0 10px',border: 'none', cursor : 'pointer',backgroundColor: '#54ef9c', color:'#fff' }}>Edit</button>
+            <button onClick={()=>navigate('/vendor/edit-coupon', {state:item})} style={{margin : '0 10px',border: 'none', cursor : 'pointer',backgroundColor: '#54ef9c', color:'#fff' }}>Edit</button>
             <button   style={{border: 'none', cursor : 'pointer',backgroundColor: 'red', color:'#fff' }}>delete</button> 
             {/* onClick={()=>handleDelete(item.id)} */}
           </td>
